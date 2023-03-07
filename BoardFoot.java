@@ -28,12 +28,11 @@ public final class BoardFoot {
     * This function calculates the length of a board per one
     * board foot then returns it to the user.
     *
-    * @param args Unused.
     * @param width passed.
     * @param height passed.
     * @return length.
     */
-    public static double CalculateBoardFoot(double width, double height) {
+    public static double calculateBoardFoot(double width, double height) {
         // Declare constant.
         final double ONE_BOARD_LENGTH = 144.0;
 
@@ -83,7 +82,7 @@ public final class BoardFoot {
                 // a positive or negative value.
                 if (doubWidth >= 0 && userDoubHeight >= 0) {
                     // Call function for positive values.
-                    boardLength = CalculateBoardFoot(doubWidth, userDoubHeight);
+                    boardLength = calculateBoardFoot(doubWidth, userDoubHeight);
 
                     // Display results to user.
                     System.out.print("The board length would be ");
